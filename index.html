@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Días de la Semana</title>
+
+    <script>
+        function mostrarDias()
+        {
+            var dias = [
+                "Lunes",
+                "Martes",
+                "Miércoles",
+                "Jueves",
+                "Viernes",
+                "Sábado",
+                "Domingo"
+            ];
+
+            document.getElementById("resultado").innerHTML = "";
+
+            for(var i = 0; i < dias.length; i++)
+            {
+                document.getElementById("resultado").innerHTML +=
+                "Día " + (i + 1) + ": " + dias[i] + "<br>";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Práctica de Programación</h2>
+
+    <p>Presiona el botón para mostrar los 7 días de la semana.</p>
+
+    <button onclick="mostrarDias()">
+        Mostrar Días de la Semana
+    </button>
+
+    <div id="resultado"></div>
+
+</body>
+</html>
